@@ -16,7 +16,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             const views = {
                 workspace: document.getElementById('view-workspace'),
                 catalog: document.getElementById('view-catalog'),
-                profile: document.getElementById('view-profile')
+                profile: document.getElementById('view-profile'),
+                suggest: document.getElementById('view-suggest')
             };
 
             // --- Navigation Logic ---
@@ -47,6 +48,11 @@ document.addEventListener('DOMContentLoaded', async () => {
             document.getElementById('nav-catalog').addEventListener('click', (e) => {
                 e.preventDefault();
                 switchView('view-catalog');
+            });
+
+            document.getElementById('nav-suggest').addEventListener('click', (e) => {
+                e.preventDefault();
+                switchView('view-suggest');
             });
             
             // --- Catalog to Profile Logic ---
