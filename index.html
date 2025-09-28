@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zluri - Employee App Catalog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="text-slate-800">
+    <!-- Main Application Container -->
+    <div id="app" class="min-h-screen flex flex-col">
+
+        <!-- Header -->
+        <div data-include="components/header.html"></div>
+
+        <!-- Main Content -->
+        <main class="flex-1">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex">
+                
+                <!-- Sidebar Navigation -->
+                <div data-include="components/sidebar.html"></div>
+
+                <!-- Content Area -->
+                <div id="content-area" class="flex-1">
+                    <!-- My Workspace View -->
+                    <div data-include="views/workspace.html"></div>
+
+                    <!-- App Catalog View -->
+                    <div data-include="views/catalog.html"></div>
+                    
+                    <!-- App Profile View -->
+                    <div data-include="views/profile.html"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Request Modal -->
+    <div data-include="components/request-modal.html"></div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
